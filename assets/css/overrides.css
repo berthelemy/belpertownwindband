@@ -29,3 +29,15 @@
 	}
 
 	
+		.wrapper.style1 {
+			background-color: #750a12;
+			color: #d0c8a0;
+		}
+
+		.wrapper.style1 header.major p {
+			color: #d0c8a0;
+		}
+
+		.icon.style1 {
+		    color: #d0c8a0;
+		}
