@@ -41,3 +41,11 @@
 		.icon.style1 {
 		    color: #d0c8a0;
 		}
+
+		input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, button.special:hover, .button.special:hover {
+    background-color: #9d283d !important;
+		}
+
+		input[type="submit"].special, input[type="reset"].special, input[type="button"].special, button.special, .button.special {
+    background-color: #750a12;
+		}
