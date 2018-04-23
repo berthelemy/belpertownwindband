@@ -46,6 +46,10 @@
 			background: #750a12;
 		}
 
+		#menu hr {
+			border-color: #d0c8a0;
+		}
+
 		input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, button.special:hover, .button.special:hover {
     background-color: #9d283d !important;
 		}
