@@ -1,3 +1,11 @@
+---
+title: Home
+longTitle: Home
+description: {{ site.description }}
+layout: default
+permalink: /
+---
+
 <!DOCTYPE HTML>
 <!--
 	Spectral by HTML5 UP
@@ -10,12 +18,12 @@
         <meta generator="Spectral by HTML5 UP" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie9.css" /><![endif]-->
 		
-		<link rel="stylesheet" href="assets/css/overrides.css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/overrides.css" />
 	</head>
 	<body class="landing">
 
@@ -24,17 +32,17 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Belper Town Wind Band</a></h1>
+						<h1><a href="{{ site.baseurl }}">Belper Town Wind Band</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="about">About</a></li>
-											<li><a href="events">Events</a></li>
-											<li><a href="contact">Contact</a></li>
+											<li><a href="{{ site.baseurl }}/">Home</a></li>
+											<li><a href="{{ site.baseurl }}/about">About</a></li>
+											<li><a href="{{ site.baseurl }}/events">Events</a></li>
+											<li><a href="{{ site.baseurl }}/contact">Contact</a></li>
 										</ul>
 									</div>
 								</li>
@@ -50,7 +58,7 @@
 							and enjoying music<br />
 							since 1999</p>
 							<ul class="actions">
-								<li><a href="contact" class="button special">Get in touch</a></li>
+								<li><a href="{{ site.baseurl }}/contact" class="button special">Get in touch</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -74,20 +82,20 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/PSX_20180422_211552.jpg" alt="Saxaphone" /></div><div class="content">
+							<div class="image"><img src="{{ site.baseurl }}/images/PSX_20180422_211552.jpg" alt="Saxaphone" /></div><div class="content">
 							<h2><a href="https://www.facebook.com/groups/18075550547/">News</a></h2>
 								<p>Visit our Facebook page for news and group discussion.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/PSX_20180422_211459.jpg" alt="Clarinet" /></div><div class="content">
+							<div class="image"><img src="{{ site.baseurl }}/images/PSX_20180422_211459.jpg" alt="Clarinet" /></div><div class="content">
 							<h2><a href="events">Events</a></h2>
 								<p>Check out where we are performing.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/PSX_20180422_211638.jpg" alt="Trumpet" /></div><div class="content">
-							<h2><a href="contact">Contact us</a></h2>
+							<div class="image"><img src="{{ site.baseurl }}/images/PSX_20180422_211638.jpg" alt="Trumpet" /></div><div class="content">
+							<h2><a href="{{ site.baseurl }}/contact">Contact us</a></h2>
 								<p>Any questions? Get in touch.</p>
 							</div>
 						</section>
@@ -103,32 +111,10 @@
 								<p>Join us for a rehearsal, or book us for your next event.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="contact" class="button fit special">Contact us</a></li>
-								<li><a href="about" class="button fit">Learn More</a></li>
+								<li><a href="{{ site.baseurl }}/contact" class="button fit special">Contact us</a></li>
+								<li><a href="{{ site.baseurl }}/about" class="button fit">Learn More</a></li>
 							</ul>
 						</div>
 					</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/groups/18075550547/about/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Belper Town Wind Band</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+				{% include footer.html %}
