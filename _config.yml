@@ -1,0 +1,15 @@
+name: Belper Town Wind Band
+description: Playing together and enjoying music since 1999
+baseurl: '/belpertownwindband'
+keywords: 
+
+url: "https://berthelemy.github.io"
+
+paginate: 10
+
+sass:
+    sass_dir: ./_scss
+
+include: ["_pages"]
+
+permalink: /:title/
