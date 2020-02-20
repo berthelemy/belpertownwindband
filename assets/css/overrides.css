@@ -31,7 +31,7 @@
 
 	
 		.wrapper.style1 {
-			background-color: #750a12;
+			background-color: #1d248b;
 			color: #d0c8a0;
 		}
 
@@ -44,7 +44,7 @@
 		}
 
 		#menu {
-			background: #750a12;
+			background: #1d248b;
 		}
 
 		#menu ul > li {
@@ -54,9 +54,9 @@
 
 
 		input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, button.special:hover, .button.special:hover {
-    background-color: #9d283d !important;
+    background-color: #181865 !important;
 		}
 
 		input[type="submit"].special, input[type="reset"].special, input[type="button"].special, button.special, .button.special {
-    background-color: #750a12;
+    background-color: #1d248b;
 		}
