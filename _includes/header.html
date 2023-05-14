@@ -19,6 +19,9 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="//assets/css/ie9.css" /><![endif]-->
     <link rel="stylesheet" href="{{ '/assets/css/overrides.css' | relative_url }}" />
 
+		{% if page.type == 'gallery' %}
+		<link href="{{ '/assets/css/lightbox.min.css' | relative_url }}" rel="stylesheet" />
+		{% endif %}
 
 
   <!-- Facebook Meta Tags -->

@@ -1,7 +1,7 @@
 name: Belper Town Wind Band
 description: Playing together and enjoying music since 1999
 baseurl: '/'
-keywords: 
+keywords:
 
 url: "https://belpertownwindband.co.uk"
 
@@ -16,3 +16,7 @@ sass:
 include: ["_pages"]
 
 permalink: /:title/
+
+# Image gallery settings
+imagesurl: "/gallery_images/"
+thumbsurl: "/gallery_thumbs/"
