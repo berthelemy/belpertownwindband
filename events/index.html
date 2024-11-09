@@ -19,12 +19,17 @@ permalink: /events/
                         <td>Location</td>
                       </tr>
                     </thead>
+
+                    {% assign now = 'now' | date: "%Y" %}
+
                     {% for event in site.data.events %}
+                    {% if event.date >= now %}
                     <tr>
                       <td>{{ event.date | date: "%A %e %B %Y" }}</td>
                       <td>{{ event.starttime }} - {{ event.endtime }}</td>
                       <td>{{ event.venue }}, {{ event.town }}</td>
                     </tr>
+                    {% endif %}
                     {% endfor %}
 
                     
