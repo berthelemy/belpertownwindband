@@ -21,7 +21,7 @@ permalink: /events/
                     </thead>
                     {% for event in site.data.events %}
                     <tr>
-                      <td>{{ event.date }}</td>
+                      <td>{{ event.date | date: "%b %d, %y" }}</td>
                       <td>{{ event.starttime }} - {{ event.endtime }}</td>
                       <td>{{ event.venue }}, {{ event.town }}</td>
                     </tr>
