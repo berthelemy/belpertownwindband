@@ -16,21 +16,18 @@ permalink: /events/
                       <tr>
                         <td>Date</td>
                         <td>Time</td>
-                        <td>Venue</td>
+                        <td>Location</td>
                       </tr>
                     </thead>
-
+                    {% for event in site.data.events %}
                     <tr>
-                      <td>7th July 2024</td>
-                      <td>14:00 - 16:00</td>
-                      <td>Larks in the Park, River Gardens, Belper</td>
+                      <td>{{ event.date }}</td>
+                      <td>{{ event.starttime }} - {{ event.endtime }}</td>
+                      <td>{{ event.venue }}, {{ event.town }}</td>
                     </tr>
+                    {% endfor %}
 
-                    <tr>
-                      <td>20th July 2024</td>
-                      <td>TBC</td>
-                      <td>Ambergate Carnival</td>
-                    </tr>
+                    
                     
 
                     </table>
