@@ -1,0 +1,51 @@
+---
+title: Events
+longTitle: Events
+description: Supporting the local community by performing<br/>throughout the year at many different venues
+layout: default
+permalink: /events/
+---
+
+<p>We are currently enjoying our winter break from rehearsals. The first rehearsal of the new term will be on the 6th January 2025.</p>
+
+	<section>
+
+                  <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <td>Date</td>
+                        <td>Time</td>
+                        <td>Location</td>
+                      </tr>
+                    </thead>
+
+                    {% assign lastBuild = site.time | date:"%s" %}
+                    Lastbuild = {{ lastBuild }}
+                    
+                    {% for event in site.data.events %}
+                    {% assign eventTime = event.date | date:"%s" %}
+                    <p>eventTime = {{ eventTime }}</p>
+                    {% if eventTime >= lastBuild %}
+                    <tr>
+                      <td>{{ event.date | date: "%A %e %B %Y" }}</td>
+                      <td>{{ event.starttime }} - {{ event.endtime }}</td>
+                      <td>{{ event.venue }}, {{ event.town }}</td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+
+                    
+                    
+
+                    </table>
+
+                  </div>
+
+
+
+									<hr />
+
+									<a href="/contact" class="button special fit">Contact us for more information</a>
+
+								</section>

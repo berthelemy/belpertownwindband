@@ -1,0 +1,7 @@
+---
+title: Home
+longTitle: Home
+description: {{ site.description }}
+layout: home
+permalink: /
+---
