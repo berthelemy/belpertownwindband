@@ -1,4 +1,4 @@
-# belpertownwindband
+# Instructions
 
 Main files to edit:
 
