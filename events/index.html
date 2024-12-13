@@ -21,11 +21,11 @@ permalink: /events/
                     </thead>
 
                     {% assign lastBuild = site.time | date:"%s" %}
-                    Lastbuild = {{ lastBuild }}
+                  
                     
                     {% for event in site.data.events %}
                     {% assign eventTime = event.date | date:"%s" %}
-                    <p>eventTime = {{ eventTime }}</p>
+                  
                     {% if eventTime >= lastBuild %}
                     <tr>
                       <td>{{ event.date | date: "%A %e %B %Y" }}</td>
