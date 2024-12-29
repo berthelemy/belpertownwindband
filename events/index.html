@@ -10,6 +10,18 @@ permalink: /events/
 
 	<section>
 
+    {% assign lastBuild = site.time | date:"%s" %}
+    {% for event in site.data.events %}
+    {% assign eventTime = event.date | date:"%s" %}
+  
+    {% if eventTime >= lastBuild %}
+      {% assign count_events = count_events | plus: 1 %}
+    {% endif %}
+    {% endfor %}
+
+    {% if count_events > 0 %}
+
+
                   <div class="table-wrapper">
                   <table>
                     <thead>
@@ -20,9 +32,6 @@ permalink: /events/
                       </tr>
                     </thead>
 
-                    {% assign lastBuild = site.time | date:"%s" %}
-                  
-                    
                     {% for event in site.data.events %}
                     {% assign eventTime = event.date | date:"%s" %}
                   
@@ -35,12 +44,15 @@ permalink: /events/
                     {% endif %}
                     {% endfor %}
 
-                    
-                    
-
                     </table>
 
-                  </div>
+                    {% else %}
+
+                    <p>We are currently sorting out our bookings for the next season. Please <a href="/contact">get in touch</a> if you would like the band to play at your event.</p>
+
+                    {% endif %}
+
+                  
 
 
 
