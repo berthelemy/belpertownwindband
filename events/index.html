@@ -9,7 +9,7 @@ permalink: /events/
 	<section>
 
     {% assign lastBuild = site.time | date:"%s" %}
-{% assign events = site.data.events | sort: "date" %}
+{% assign events = site.data.events %}
     {% for event in events %}
     {% assign eventTime = event.date | date:"%s" %}
   
