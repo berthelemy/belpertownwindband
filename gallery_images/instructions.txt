@@ -1,0 +1,3 @@
+To resize and reformat:
+
+sips -Z 1024 -s format png originals-summer-xmas-2024/*.JPG -o ./resized
