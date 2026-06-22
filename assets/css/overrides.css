@@ -107,3 +107,12 @@ padding: 4px;
 section#banner div.inner {
 	margin-bottom: 14rem;
 }
+
+section#cta.wrapper.style4 {
+	background-image: none;	
+}
+
+
+#main > header h2 {
+	margin-bottom: 12rem;
+}
